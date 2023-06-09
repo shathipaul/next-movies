@@ -12,8 +12,8 @@ export default function MovieCard({ title, overview, posterPath }: MovieCardProp
         : '/no-image-available.png';
     return (
         <div className="bg-white rounded shadow p-4">
-            <img className="rounded mb-4" width={256} height={256} src={imgUrl} alt="" />
-            <h2 className="text-2xl font-bold mb-2">{title}</h2>
+            <img className="w-full rounded mb-4" src={imgUrl} alt="" />
+            <h2 className="text-2xl text-rose-600 font-bold mb-2">{title}</h2>
             <p className="text-sm text-gray-500">{overview.substring(0, 150)}</p>
         </div>
     )
