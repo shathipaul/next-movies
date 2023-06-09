@@ -1,9 +1,15 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600']
+})
+
+export const merriWeather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700']
 })
 
 export const metadata = {
